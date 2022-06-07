@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SGPA Calculator</title>
+    <link rel="icon" href="cal1.png">
+    <script data-ad-client="ca-pub-1137844533742687" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Chela+One|Fira+Sans|Lato|Roboto|Ubuntu|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- JQuery script -->
+
+    <!-- GreenSock JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    
+        <div class="topnav" cellspacing="10">
+
+            <a href="#">SGPA & CGPA calculator</a>
+
+            <a class="active" href="index.html">Calculator</a>
+
+            <a href="save.html">Save</a>
+
+            <a href="result.php">Result</a>
+        
+            <a href="about.html">About</a>
+        
+            <a href="how.html">How it works</a>
+        
+        </div>
+    
+ <div class="container-fluid main">
+     <h1 >SGPA Calculator</h1>
+     <form class="form-horizontal">
+        <div class="row">
+             <div class="col-md-5">
+                 <legend>Enter your marks</legend>
+                 <div class="form-group" id="subject-field">
+                     <div class="input-group">
+                         <span class="input-group-addon">Subject 1</span>
+                         <input id="sub1" type="text" class="form-control" name="sub1" placeholder="marks" required>
+                     </div>
+                     <br>
+                 </div>
+                 <div class="form-group" id="lab-fields">
+                     <div class="input-group">
+                         <span class="input-group-addon">Lab 1</span>
+                         <input id="lab1" type="text" class="form-control" name="sub1" placeholder="marks. Put 0 if not required" required>
+                     </div>
+                     <br>
+                     <div class="input-group">
+                         <span class="input-group-addon">Lab 2</span>
+                         <input id="lab2" type="text" class="form-control" name="sub1" placeholder="marks. Put 0 if not required" required>
+                    </div>
+                     <br>
+                 </div>
+                 <button class="btn btn-default addSubject" data-toggle="modal" data-target="#subModal"><i class="material-icons">add</i></button>
+                 <button type="button" class="btn btn-success sgpaCalculate" id="startSGPA">Calculate</button>
+                 <button type="reset" class="btn btn-danger">Reset</button>
+             </div>
+         </div>
+         <br>
+         <div class="col-md-4">
+                <div class="well SGPAresult">Result will appear here</div>
+         </div>
+     </form>
+     <br>
+ </div>
+ <div class="container-fluid main">
+         <h1>CGPA calculator</h1>
+        <div class="row">
+         <div class="col-md-5">
+             <legend>Enter your SGPAs according to semester</legend>
+             <p>Leave fields blank for semesters not completed</p>
+             <form class="form-horizontal" id="CPGAarea">
+                 <div class ="middle">
+                 <div class="input-group">
+                     <input type="text" class="form-control cgpa" placeholder="Semester 1">
+                 </div>
+                 <div class="input-group">
+                     <input type="text" class="form-control cgpa" placeholder="Semester 2">
+                 </div>
+                 <div class="input-group">
+                     <input type="text" class="form-control cgpa" placeholder="Semester 3">
+                 </div>
+                 <div class="input-group">
+                     <input type="text" class="form-control cgpa" placeholder="Semester 4">
+                 </div>
+                 <div class="input-group">
+                     <input type="text" class="form-control cgpa" placeholder="Semester 5">
+                 </div>
+                 <div class="input-group">
+                     <input type="text" class="form-control cgpa" placeholder="Semester 6">
+                 </div>
+                 <div class="input-group">
+                     <input type="text" class="form-control cgpa" placeholder="Semester 7">
+                 </div>
+                 <div class="input-group">
+                     <input type="text" class="form-control cgpa" placeholder="Semester 8">
+                 </div>
+                 <br>
+                 </div>
+                 <button type="button" class="btn btn-success cgpaCalculate">Calculate CGPA</button>
+                 <button type="reset" class="btn btn-danger">Reset</button>
+             </form>
+         </div>
+<!--          <script type="text/javascript" language="javascript">
+              var aax_size='300x600';
+              var aax_pubname = 'sgpa10f-21';
+              var aax_src='302';
+            </script>
+            <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script> -->
+     </div>
+     <br>
+     <div class="col-md-4">
+         <div class="well cgparesult">Result will appear here</div>
+     </div>
+ </div>
+    <br>
+    <br>
+    <center><footer class="footer"> Copyright © 2021 TIE Project. All Rights Reserved</footer></center>
+    <div id="subModal" class="modal fade" role="alertdialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Choose type of subject</h4>
+        </div>
+        <div class="modal-body">
+            <button class="btn btn-primary btn-block" id="addSubject" data-dismiss="modal">Main subject</button>
+            <button class="btn btn-primary btn-block" id="addElective" data-dismiss="modal">Elective</button>
+            <button class="btn btn-primary btn-block" id="addTwoCredit" data-dismiss="modal">2 Credits(Project phase 1, technical seminar, labs)</button>
+            <button class="btn btn-primary btn-block" id="addProjectTwo" data-dismiss="modal">Project phase 2</button>
+            <button class="btn btn-primary btn-block" id="addOneCredit" data-dismiss="modal">1 Credit</button>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

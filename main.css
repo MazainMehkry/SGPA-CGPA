@@ -1,0 +1,147 @@
+body {
+    font-family: 'Lato',sans-serif;
+    background-color: #E8F0F2;
+}
+.main {
+    padding: 10px;
+    margin: 10px;
+}
+.about {
+    font-size: 25px;
+    text-align: justify;
+    margin-left:20%;
+    margin-right:20%;
+    font-family: 'Lato',sans-serif;
+}
+.intro {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Lato',sans-serif;
+}
+.cgpa {
+    margin: 10px;
+}
+.sgpa-title {
+    font-family: 'Chela One',sans-serif;
+}
+form {
+    padding: 10px;
+}
+#subModal {
+    top: 100px;
+    max-width: 600px;
+}
+.footer{
+    background-color: #053742;
+    color: white;
+    font-size: 18px;
+}
+.footer1{
+    background-color: #053742;
+    color: white;
+    font-size: 18px;
+    margin-top:173px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #39A2DB;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #A2DBFA;
+  color: black;
+  padding-bottom: 15px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #E8F0F2;
+  color: black;
+  font-size: 22px;
+  padding: 11px 10px;
+}
+
+.container-fluid{
+    text-align: center;
+}
+
+.row{
+    margin-left:37%;
+}
+
+.middle{
+    margin-left:25.5%
+}
+
+.col-md-4{
+    margin-left:34%;
+}
+
+.cen{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lato',sans-serif;
+}
+
+.head{
+    text-decoration: underline;
+    color:black;
+    text-align: center;
+}
+
+.col1{
+    font-size: 150%;
+    text-align: center;
+}
+
+.box{
+    margin-left:1%;
+    width:13.1%;
+    align-items: center;
+}
+
+.box1{
+    width: 13.1%;
+    margin-left:1%;
+}
+
+.box2{
+    margin-left: 3.4%;
+    width: 13.1%;
+}
+
+.box3 {
+    margin-left: 2.7%;
+    width: 13.1%;
+}
+
+.head1{
+    text-align: center;
+}
+
+.footer2{
+background-color: #053742;
+    color: white;
+    font-size: 18px;
+    margin-top:10.45%;
+}
+
+.footer3{
+    background-color: #053742;
+        color: white;
+        font-size: 18px;
+        margin-top: 36.65%;
+}
